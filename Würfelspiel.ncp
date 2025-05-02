@@ -7,13 +7,17 @@
       <Entity type="Class">
         <Name>Wuerfel</Name>
         <Access>Public</Access>
-        <Location left="10" top="17" />
-        <Size width="162" height="216" />
+        <Location left="40" top="131" />
+        <Size width="162" height="247" />
         <Collapsed>False</Collapsed>
         <Member type="Field">int seiten</Member>
         <Member type="Field">int wurfergebnis</Member>
+        <Member type="Field">Rectangle rectangle</Member>
+        <Member type="Field">bool hold</Member>
         <Member type="Property">public int Seiten { get; }</Member>
         <Member type="Property">public int Wurfergebnis { get; }</Member>
+        <Member type="Property">public Rectangle Rectangle { get; set; }</Member>
+        <Member type="Property">public bool Hold { get; set; }</Member>
         <Member type="Method">public int Wuerfeln()</Member>
         <Member type="Constructor">public Wuerfel(int seiten)</Member>
         <Modifier>None</Modifier>
@@ -21,7 +25,7 @@
       <Entity type="Class">
         <Name>Kniffel</Name>
         <Access>Public</Access>
-        <Location left="185" top="17" />
+        <Location left="354" top="131" />
         <Size width="162" height="570" />
         <Collapsed>False</Collapsed>
         <Member type="Field">int einser</Member>
@@ -58,7 +62,7 @@
       <Entity type="Class">
         <Name>Spieler</Name>
         <Access>Public</Access>
-        <Location left="358" top="17" />
+        <Location left="665" top="131" />
         <Size width="162" height="216" />
         <Collapsed>False</Collapsed>
         <Member type="Field">string name</Member>
@@ -69,6 +73,13 @@
         <Modifier>None</Modifier>
       </Entity>
     </Entities>
-    <Relationships />
+    <Relationships>
+      <Relationship type="Dependency" first="2" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+    </Relationships>
   </ProjectItem>
 </Project>
